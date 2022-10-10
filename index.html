@@ -1,0 +1,46 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <main>
+            <div class="panel">
+            <form id="scheme-form">
+                <div class="colorPicker-wrapper">
+                    <!-- <label for="colorPicker">Color Wheel</label> -->
+                    <!-- <label></label> -->
+                    <input type="color" name="color" id="colorPicker">
+                </div>
+                <div class="schemePicker-wrapper">
+                    <!-- <label for="scheme-select"></label> -->
+                    <select name="scheme-select" id="scheme-select">
+                        <option value="monochrome">Monochrome</option>
+                        <option value="monochrome-dark">Monochrome-Dark</option>
+                        <option value="monochrome-light">Monochrome-Light</option>
+                        <option value="analogic">Analogic</option>
+                        <option value="complement">Complement</option>
+                        <option value="analogic-complement">Analogic-Complement</option>
+                        <option value="triad">Triad</option>
+                        <option value="quad">Quad</option>
+                    </select>
+                </div>
+                <div class="btn-wrapper">
+                    <button class="btn-submit" id="btn-submit">Get Color Scheme</button>
+                </div>
+            </form>
+            </div>
+            
+            <div id="palette">
+                <div class="swatch"></div>
+                <div class="swatch"></div>
+                <div class="swatch"></div>
+                <div class="swatch"></div>
+                <div class="swatch"></div>
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
