@@ -34,7 +34,7 @@ btnSubmit.addEventListener('click', function() {
     let schemeId = ""
     console.log(hexCode)
     
-    fetch(`https://www.thecolorapi.com/scheme/?hex=${hexCode}&mode=${scheme}`, {method:"GET"})
+    fetch(`https://www.thecolorapi.com/scheme/?hex=${hexCode}&mode=${scheme}&count=10`, {method:"GET"})
     .then( res => res.json())
     .then( data => {
         // console.log(data)
